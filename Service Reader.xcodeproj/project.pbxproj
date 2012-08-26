@@ -15,6 +15,7 @@
 		DCBE4C4115E8E65300665D58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBE4C4015E8E65300665D58 /* AppDelegate.m */; };
 		DCBE4C4415E8E65300665D58 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBE4C4215E8E65300665D58 /* MainStoryboard.storyboard */; };
 		DCBE4C4715E8E65300665D58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBE4C4615E8E65300665D58 /* ViewController.m */; };
+		DCBE4C4F15E8E6C000665D58 /* ServiceConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBE4C4E15E8E6C000665D58 /* ServiceConnector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,9 @@
 		DCBE4C4315E8E65300665D58 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DCBE4C4515E8E65300665D58 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DCBE4C4615E8E65300665D58 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCBE4C4E15E8E6C000665D58 /* ServiceConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceConnector.m; path = ../ServiceConnector.m; sourceTree = "<group>"; };
+		DCBE4C5015E8FB6E00665D58 /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = en; path = en.lproj/ServiceConnector.h; sourceTree = "<group>"; };
+		DCBE4C5415E8FDD200665D58 /* JSONDictionaryExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONDictionaryExtensions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		DCBE4C3615E8E65300665D58 /* Service Reader */ = {
 			isa = PBXGroup;
 			children = (
+				DCBE4C5315E8FD4F00665D58 /* JSONDictionaryExtensions */,
+				DCBE4C5215E8FD4000665D58 /* Service Connector */,
 				DCBE4C3F15E8E65300665D58 /* AppDelegate.h */,
 				DCBE4C4015E8E65300665D58 /* AppDelegate.m */,
 				DCBE4C4215E8E65300665D58 /* MainStoryboard.storyboard */,
@@ -96,6 +102,23 @@
 				DCBE4C3E15E8E65300665D58 /* Service Reader-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCBE4C5215E8FD4000665D58 /* Service Connector */ = {
+			isa = PBXGroup;
+			children = (
+				DCBE4C5115E8FB6E00665D58 /* ServiceConnector.h */,
+				DCBE4C4E15E8E6C000665D58 /* ServiceConnector.m */,
+			);
+			name = "Service Connector";
+			sourceTree = "<group>";
+		};
+		DCBE4C5315E8FD4F00665D58 /* JSONDictionaryExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCBE4C5415E8FDD200665D58 /* JSONDictionaryExtensions.h */,
+			);
+			name = JSONDictionaryExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +187,7 @@
 				DCBE4C3D15E8E65300665D58 /* main.m in Sources */,
 				DCBE4C4115E8E65300665D58 /* AppDelegate.m in Sources */,
 				DCBE4C4715E8E65300665D58 /* ViewController.m in Sources */,
+				DCBE4C4F15E8E6C000665D58 /* ServiceConnector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +209,14 @@
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
+		};
+		DCBE4C5115E8FB6E00665D58 /* ServiceConnector.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCBE4C5015E8FB6E00665D58 /* en */,
+			);
+			name = ServiceConnector.h;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -279,6 +311,7 @@
 				DCBE4C4C15E8E65300665D58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
